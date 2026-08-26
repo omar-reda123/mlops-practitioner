@@ -1,0 +1,33 @@
+[project]
+name = "prodml"
+version = "0.1.0"
+description = "Production ML pipeline and serving service"
+readme = "README.md"
+authors = [
+    { name = "Omar Reda", email = "or60969@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.141.1",
+    "joblib>=1.5.3",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.1",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.15.0",
+    "scikit-learn>=1.9.0",
+    "uvicorn>=0.52.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.4",
+]

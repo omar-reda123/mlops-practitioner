@@ -1,0 +1,29 @@
+# 1. بيئات العمل الافتراضية (تُبنى داخل الـ Container بدلاً من نسخ البيئة المحلية)
+.venv
+venv/
+env/
+
+# 2. ملفات الكاش ومخلفات بايثون
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# 3. إدارة النسخ وإعدادات المحرر (Git & IDEs)
+.git
+.gitignore
+.vscode/
+.idea/
+*.swp
+
+# 4. ملفات البيئة السرية وسجلات الأخطاء
+.env
+*.log
+
+# 5. ملفات البناء المؤقتة
+dist/
+build/
+*.egg-info/
